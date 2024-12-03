@@ -1,5 +1,3 @@
-# My Simple Webmap
+## New Jersey Cities Map
+[Interactive Map](nj_cities_map.html)
 
-Below is an interactive webmap created using Folium:
-
-[View My Map](nj_cities_map.html)
