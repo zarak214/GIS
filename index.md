@@ -2,4 +2,4 @@
 
 Below is an interactive webmap created using Folium:
 
-[View My Map](simple_map.html)
+[View My Map](nj_cities_map.html)
