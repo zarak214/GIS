@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2ce590cd377ee2fee6097a2b0c1ae3f3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 85.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2ce590cd377ee2fee6097a2b0c1ae3f3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2ce590cd377ee2fee6097a2b0c1ae3f3 = L.map(
+                "map_2ce590cd377ee2fee6097a2b0c1ae3f3",
+                {
+                    center: [40.0583, -74.4057],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_db22c605405113809e062d2a3e431ae0 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_db22c605405113809e062d2a3e431ae0.addTo(map_2ce590cd377ee2fee6097a2b0c1ae3f3);
+        
+    
+            var tile_layer_e79fb5c75b066fd8ca88b08cd9dbff8c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e79fb5c75b066fd8ca88b08cd9dbff8c.addTo(map_2ce590cd377ee2fee6097a2b0c1ae3f3);
+        
+    
+            var circle_marker_7d838badd189f74c8f9fe6041d278ef1 = L.circleMarker(
+                [40.735657, -74.172363],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2ce590cd377ee2fee6097a2b0c1ae3f3);
+        
+    
+        var popup_bcc2e3844d05f9bcc2373f272c8a732d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20ce1dbf8e1fec9bbd6ed01e9614a015 = $(`<div id="html_20ce1dbf8e1fec9bbd6ed01e9614a015" style="width: 100.0%; height: 100.0%;"><b>City:</b> Newark<br><b>Info:</b> Largest city in NJ</div>`)[0];
+                popup_bcc2e3844d05f9bcc2373f272c8a732d.setContent(html_20ce1dbf8e1fec9bbd6ed01e9614a015);
+            
+        
+
+        circle_marker_7d838badd189f74c8f9fe6041d278ef1.bindPopup(popup_bcc2e3844d05f9bcc2373f272c8a732d)
+        ;
+
+        
+    
+    
+            circle_marker_7d838badd189f74c8f9fe6041d278ef1.bindTooltip(
+                `<div>
+                     Newark
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c34c5b99333d6707f47349d8c995c9ca = L.circleMarker(
+                [40.2206, -74.7597],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2ce590cd377ee2fee6097a2b0c1ae3f3);
+        
+    
+        var popup_ab8b57429456cd90b8f44c03211e5ed4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f856037426a5a5a270436b94f54496f6 = $(`<div id="html_f856037426a5a5a270436b94f54496f6" style="width: 100.0%; height: 100.0%;"><b>City:</b> Trenton<br><b>Info:</b> State capital</div>`)[0];
+                popup_ab8b57429456cd90b8f44c03211e5ed4.setContent(html_f856037426a5a5a270436b94f54496f6);
+            
+        
+
+        circle_marker_c34c5b99333d6707f47349d8c995c9ca.bindPopup(popup_ab8b57429456cd90b8f44c03211e5ed4)
+        ;
+
+        
+    
+    
+            circle_marker_c34c5b99333d6707f47349d8c995c9ca.bindTooltip(
+                `<div>
+                     Trenton
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e34b156addd5df953037a4c10af1b3ad = L.circleMarker(
+                [39.3643, -74.4229],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2ce590cd377ee2fee6097a2b0c1ae3f3);
+        
+    
+        var popup_f38cbb534b36ce1e0a8dc8da447a45ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c01572db3fb3c67db1139a3edb6498e9 = $(`<div id="html_c01572db3fb3c67db1139a3edb6498e9" style="width: 100.0%; height: 100.0%;"><b>City:</b> Atlantic City<br><b>Info:</b> Famous for casinos</div>`)[0];
+                popup_f38cbb534b36ce1e0a8dc8da447a45ce.setContent(html_c01572db3fb3c67db1139a3edb6498e9);
+            
+        
+
+        circle_marker_e34b156addd5df953037a4c10af1b3ad.bindPopup(popup_f38cbb534b36ce1e0a8dc8da447a45ce)
+        ;
+
+        
+    
+    
+            circle_marker_e34b156addd5df953037a4c10af1b3ad.bindTooltip(
+                `<div>
+                     Atlantic City
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var heat_map_14573290e1aa6565714165f5965790d2 = L.heatLayer(
+                [[40.735657, -74.172363], [40.2206, -74.7597], [39.3643, -74.4229]],
+                {"blur": 10, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            );
+        
+    
+            heat_map_14573290e1aa6565714165f5965790d2.addTo(map_2ce590cd377ee2fee6097a2b0c1ae3f3);
+        
+    
+            var layer_control_9979714d9ec5b88ef92c719dae126c91_layers = {
+                base_layers : {
+                    "Carto Positron" : tile_layer_db22c605405113809e062d2a3e431ae0,
+                    "OpenStreetMap" : tile_layer_e79fb5c75b066fd8ca88b08cd9dbff8c,
+                },
+                overlays :  {
+                    "Heatmap" : heat_map_14573290e1aa6565714165f5965790d2,
+                },
+            };
+            let layer_control_9979714d9ec5b88ef92c719dae126c91 = L.control.layers(
+                layer_control_9979714d9ec5b88ef92c719dae126c91_layers.base_layers,
+                layer_control_9979714d9ec5b88ef92c719dae126c91_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_2ce590cd377ee2fee6097a2b0c1ae3f3);
+
+        
+</script>
+</html>
